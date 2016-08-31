@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WebRTC"
-  s.version      = "1.0.0"
+  s.version      = "1.0.13977"
   s.summary      = "WebRTC SDK for iOS"
   s.description  = <<-DESC
     WebRTC is a free, open project that provides browsers and mobile
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://webrtc.org/"
   s.license      = { :type => "BSD", :file => "LICENSE.html" }
   s.author       = "Google Inc."
-  s.source       = { :git => "https://github.com/wenxin3262/WebRTC-iOS.git" }
+  s.source       = { :git => "https://github.com/wenxin3262/WebRTC-iOS.git" :tag => s.version }
   s.platform     = :ios, "8.0"
 
   s.public_header_files = "WebRTC.framework/Headers/**/*.h"
