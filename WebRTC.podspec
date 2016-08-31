@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     APIs.
                    DESC
   s.homepage     = "http://webrtc.org/"
-  s.license      = { :type => "BSD", :file => "LICENSE.html" }
+  s.license      = { :type => "BSD" }
   s.author       = "Google Inc."
   s.source       = { :git => "https://github.com/wenxin3262/WebRTC-iOS.git" :tag => s.version }
   s.platform     = :ios, "8.0"
