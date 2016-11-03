@@ -1,0 +1,4 @@
+language: swift
+osx_image: xcode8
+xcode_project: WebRTCDemo.xcodeproj
+xcode_scheme: WebRTCDemo
