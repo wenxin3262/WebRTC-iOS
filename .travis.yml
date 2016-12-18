@@ -1,8 +1,6 @@
 language: objective-c
-osx_image: xcode8
-
-env:
-  - DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=latest'
-
-script:
-  - set -o pipefail && xcodebuild -project ./WebRTCDemo/WebRTCDemo.xcodeproj -scheme WebRTCDemo -sdk iphonesimulator -destination "$DESTINATION" test | xcpretty
+osx_image: xcode8.2
+xcode_workspace: ./WebRTCDemo/WebRTCDemo.xcworkspace
+xcode_scheme: WebRTCDemo
+podfile: ./WebRTCDemo/Podfile
+xcode_sdk: iphonesimulator10.1
