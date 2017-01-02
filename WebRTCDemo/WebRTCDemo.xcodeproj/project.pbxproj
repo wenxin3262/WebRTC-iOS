@@ -12,8 +12,19 @@
 		3F63B1731D8332C500E072C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F63B1711D8332C500E072C0 /* Main.storyboard */; };
 		3F63B1751D8332C500E072C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F63B1741D8332C500E072C0 /* Assets.xcassets */; };
 		3F63B1781D8332C500E072C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F63B1761D8332C500E072C0 /* LaunchScreen.storyboard */; };
+		73D53F251E1A29CB00B24ED9 /* WebRTCDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D53F241E1A29CB00B24ED9 /* WebRTCDemoTests.swift */; };
 		FCB1F9D9C8BA5FD77836FF7A /* Pods_WebRTCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E282F12B26609A291D0174 /* Pods_WebRTCDemo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73D53F271E1A29CB00B24ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F63B1621D8332C500E072C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F63B1691D8332C500E072C0;
+			remoteInfo = WebRTCDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09E282F12B26609A291D0174 /* Pods_WebRTCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebRTCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +36,9 @@
 		3F63B1771D8332C500E072C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F63B1791D8332C500E072C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F63B17F1D83343600E072C0 /* WebRTCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebRTCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		73D53F221E1A29CB00B24ED9 /* WebRTCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D53F241E1A29CB00B24ED9 /* WebRTCDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCDemoTests.swift; sourceTree = "<group>"; };
+		73D53F261E1A29CB00B24ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822ED353D34155673177080B /* Pods-WebRTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B56503445B0141590218477F /* Pods-WebRTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +49,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB1F9D9C8BA5FD77836FF7A /* Pods_WebRTCDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D53F1F1E1A29CB00B24ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				3F63B16C1D8332C500E072C0 /* WebRTCDemo */,
+				73D53F231E1A29CB00B24ED9 /* WebRTCDemoTests */,
 				3F63B16B1D8332C500E072C0 /* Products */,
 				099B973B47262B9BEEEF372B /* Pods */,
 				DF8A603764090310572684D0 /* Frameworks */,
@@ -64,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3F63B16A1D8332C500E072C0 /* WebRTCDemo.app */,
+				73D53F221E1A29CB00B24ED9 /* WebRTCDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +103,15 @@
 				3F63B17F1D83343600E072C0 /* WebRTCDemo-Bridging-Header.h */,
 			);
 			path = WebRTCDemo;
+			sourceTree = "<group>";
+		};
+		73D53F231E1A29CB00B24ED9 /* WebRTCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				73D53F241E1A29CB00B24ED9 /* WebRTCDemoTests.swift */,
+				73D53F261E1A29CB00B24ED9 /* Info.plist */,
+			);
+			path = WebRTCDemoTests;
 			sourceTree = "<group>";
 		};
 		DF8A603764090310572684D0 /* Frameworks */ = {
@@ -113,13 +145,31 @@
 			productReference = 3F63B16A1D8332C500E072C0 /* WebRTCDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		73D53F211E1A29CB00B24ED9 /* WebRTCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D53F291E1A29CB00B24ED9 /* Build configuration list for PBXNativeTarget "WebRTCDemoTests" */;
+			buildPhases = (
+				73D53F1E1E1A29CB00B24ED9 /* Sources */,
+				73D53F1F1E1A29CB00B24ED9 /* Frameworks */,
+				73D53F201E1A29CB00B24ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73D53F281E1A29CB00B24ED9 /* PBXTargetDependency */,
+			);
+			name = WebRTCDemoTests;
+			productName = WebRTCDemoTests;
+			productReference = 73D53F221E1A29CB00B24ED9 /* WebRTCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3F63B1621D8332C500E072C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = WebRTCDemo;
 				TargetAttributes = {
@@ -128,6 +178,12 @@
 						DevelopmentTeam = 22593463Q9;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+					};
+					73D53F211E1A29CB00B24ED9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 22593463Q9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F63B1691D8332C500E072C0;
 					};
 				};
 			};
@@ -145,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				3F63B1691D8332C500E072C0 /* WebRTCDemo */,
+				73D53F211E1A29CB00B24ED9 /* WebRTCDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +214,13 @@
 				3F63B1781D8332C500E072C0 /* LaunchScreen.storyboard in Resources */,
 				3F63B1751D8332C500E072C0 /* Assets.xcassets in Resources */,
 				3F63B1731D8332C500E072C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D53F201E1A29CB00B24ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +284,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73D53F1E1E1A29CB00B24ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D53F251E1A29CB00B24ED9 /* WebRTCDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73D53F281E1A29CB00B24ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F63B1691D8332C500E072C0 /* WebRTCDemo */;
+			targetProxy = 73D53F271E1A29CB00B24ED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3F63B1711D8332C500E072C0 /* Main.storyboard */ = {
@@ -343,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 22593463Q9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WebRTCDemo/Info.plist;
@@ -361,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 22593463Q9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WebRTCDemo/Info.plist;
@@ -369,6 +451,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WebRTCDemo/WebRTCDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		73D53F2A1E1A29CB00B24ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 22593463Q9;
+				INFOPLIST_FILE = WebRTCDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xinwen.WebRTCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCDemo.app/WebRTCDemo";
+			};
+			name = Debug;
+		};
+		73D53F2B1E1A29CB00B24ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 22593463Q9;
+				INFOPLIST_FILE = WebRTCDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xinwen.WebRTCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCDemo.app/WebRTCDemo";
 			};
 			name = Release;
 		};
@@ -389,6 +501,15 @@
 			buildConfigurations = (
 				3F63B17D1D8332C500E072C0 /* Debug */,
 				3F63B17E1D8332C500E072C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D53F291E1A29CB00B24ED9 /* Build configuration list for PBXNativeTarget "WebRTCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D53F2A1E1A29CB00B24ED9 /* Debug */,
+				73D53F2B1E1A29CB00B24ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
