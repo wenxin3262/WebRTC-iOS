@@ -1,6 +1,6 @@
-language: objective-c
-osx_image: xcode8.2
-xcode_workspace: ./WebRTCDemo/WebRTCDemo.xcworkspace
+language: swift
+osx_image: xcode8
+xcode_project: ./WebRTCDemo/WebRTCDemo.xcodeproj
 xcode_scheme: WebRTCDemo
-podfile: ./WebRTCDemo/Podfile
 xcode_sdk: iphonesimulator10.1
+podfile: ./WebRTCDemo/Podfile
