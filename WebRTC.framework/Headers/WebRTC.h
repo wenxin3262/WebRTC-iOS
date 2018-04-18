@@ -12,7 +12,6 @@
 #import <WebRTC/RTCVideoCodec.h>
 #import <WebRTC/RTCVideoCodecFactory.h>
 #import <WebRTC/RTCAudioSessionConfiguration.h>
-#import <WebRTC/RTCAVFoundationVideoSource.h>
 #import <WebRTC/RTCAudioSource.h>
 #import <WebRTC/RTCAudioTrack.h>
 #import <WebRTC/RTCCameraVideoCapturer.h>
@@ -44,16 +43,13 @@
 #import <WebRTC/RTCRtpParameters.h>
 #import <WebRTC/RTCRtpReceiver.h>
 #import <WebRTC/RTCRtpSender.h>
+#import <WebRTC/RTCRtpTransceiver.h>
 #import <WebRTC/RTCDtmfSender.h>
 #import <WebRTC/RTCSSLAdapter.h>
 #import <WebRTC/RTCSessionDescription.h>
 #import <WebRTC/RTCTracing.h>
 #import <WebRTC/RTCVideoCapturer.h>
 #import <WebRTC/RTCVideoCodecH264.h>
-#import <WebRTC/RTCVideoDecoderVP8.h>
-#import <WebRTC/RTCVideoDecoderVP9.h>
-#import <WebRTC/RTCVideoEncoderVP8.h>
-#import <WebRTC/RTCVideoEncoderVP9.h>
 #import <WebRTC/RTCVideoFrame.h>
 #import <WebRTC/RTCVideoFrameBuffer.h>
 #import <WebRTC/RTCVideoRenderer.h>
@@ -61,5 +57,9 @@
 #import <WebRTC/RTCVideoTrack.h>
 #import <WebRTC/RTCVideoViewShading.h>
 #import <WebRTC/UIDevice+RTCDevice.h>
-#import <WebRTC/RTCMTLVideoView.h>
+#import <WebRTC/RTCVideoDecoderVP8.h>
+#import <WebRTC/RTCVideoDecoderVP9.h>
+#import <WebRTC/RTCVideoEncoderVP8.h>
+#import <WebRTC/RTCVideoEncoderVP9.h>
+#import <WebRTC/RTCCallbackLogger.h>
 #import <WebRTC/RTCFileLogger.h>

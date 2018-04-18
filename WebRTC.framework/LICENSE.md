@@ -36,10 +36,6 @@ party licenses. Paths to the files and associated licenses are collected here.
 Files governed by third party licenses:
 base/base64.cc
 base/base64.h
-base/md5.cc
-base/md5.h
-base/sha1.cc
-base/sha1.h
 base/sigslot.cc
 base/sigslot.h
 common_audio/fft4g.c
@@ -79,34 +75,6 @@ License:
 //*     o reserve string buffer space in advance
 //*
 //*********************************************************************
--------------------------------------------------------------------------------
-Files:
-base/md5.cc
-base/md5.h
-
-License:
-/*
- * This code implements the MD5 message-digest algorithm.
- * The algorithm is due to Ron Rivest.  This code was
- * written by Colin Plumb in 1993, no copyright is claimed.
- * This code is in the public domain; do with it what you wish.
- *
--------------------------------------------------------------------------------
-Files:
-base/sha1.cc
-base/sha1.h
-
-License:
-/*
- * SHA-1 in C
- * By Steve Reid &lt;sreid@sea-to-sky.net&gt;
- * 100% Public Domain
- *
- * -----------------
- * Modified 7/98
- * By James H. Brown &lt;jbrown@burgoyne.com&gt;
- * Still 100% Public Domain
- *
 -------------------------------------------------------------------------------
 Files:
 base/sigslot.cc
@@ -500,10 +468,9 @@ license. This license is reproduced at the bottom of this file.
 Contributors to BoringSSL are required to follow the CLA rules for Chromium:
 https://cla.developers.google.com/clas
 
-Some files from Intel are under yet another license, which is also included
-underneath. Files in third_party/ have their own licenses, as described
-therein. The MIT license, for third_party/fiat, which, unlike other third_party
-directories, is compiled into non-test libraries, is included below.
+Files in third_party/ have their own licenses, as described therein. The MIT
+license, for third_party/fiat, which, unlike other third_party directories, is
+compiled into non-test libraries, is included below.
 
 The OpenSSL toolkit stays under a dual license, i.e. both the conditions of the
 OpenSSL License and the original SSLeay license apply to the toolkit. See below
@@ -651,42 +618,6 @@ ISC license used for completely new code in BoringSSL:
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. */
-
-
-Some files from Intel carry the following license:
-
-# Copyright (c) 2012, Intel Corporation
-#
-# All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are
-# met:
-#
-# *  Redistributions of source code must retain the above copyright
-#    notice, this list of conditions and the following disclaimer.
-#
-# *  Redistributions in binary form must reproduce the above copyright
-#    notice, this list of conditions and the following disclaimer in the
-#    documentation and/or other materials provided with the
-#    distribution.
-#
-# *  Neither the name of the Intel Corporation nor the names of its
-#    contributors may be used to endorse or promote products derived from
-#    this software without specific prior written permission.
-#
-#
-# THIS SOFTWARE IS PROVIDED BY INTEL CORPORATION &quot;&quot;AS IS&quot;&quot; AND ANY
-# EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-# PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL CORPORATION OR
-# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-# LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 The code in third_party/fiat carries the MIT license:
