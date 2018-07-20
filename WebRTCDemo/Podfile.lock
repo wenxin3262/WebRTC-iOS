@@ -1,5 +1,5 @@
 PODS:
-  - WebRTC (67.28.23167)
+  - WebRTC (68.10.23789)
 
 DEPENDENCIES:
   - WebRTC (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  WebRTC: 05c634fe8c7f48e80ecd72e727c2bd2e7652d8bb
+  WebRTC: 274d3aa2ef7f80611ebb36c17bdead372bab6f4e
 
 PODFILE CHECKSUM: 46607ed57dc5f895b694521caa450694a1649d46
 
