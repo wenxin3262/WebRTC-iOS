@@ -34,10 +34,10 @@ This source tree contains third party source code which is governed by third
 party licenses. Paths to the files and associated licenses are collected here.
 
 Files governed by third party licenses:
-base/base64.cc
-base/base64.h
-base/sigslot.cc
-base/sigslot.h
+rtc_base/base64.cc
+rtc_base/base64.h
+rtc_base/sigslot.cc
+rtc_base/sigslot.h
 common_audio/fft4g.c
 common_audio/signal_processing/spl_sqrt_floor.c
 common_audio/signal_processing/spl_sqrt_floor_arm.S
@@ -50,15 +50,12 @@ modules/audio_coding/codecs/isac/main/source/fft.c
 modules/audio_device/mac/portaudio/pa_memorybarrier.h
 modules/audio_device/mac/portaudio/pa_ringbuffer.c
 modules/audio_device/mac/portaudio/pa_ringbuffer.h
-modules/audio_processing/aec/aec_rdft.c
-system_wrappers/source/condition_variable_event_win.cc
-system_wrappers/source/set_thread_name_win.h
 
 Individual licenses for each file:
 -------------------------------------------------------------------------------
 Files:
-base/base64.cc
-base/base64.h
+rtc_base/base64.cc
+rtc_base/base64.h
 
 License:
 //*********************************************************************
@@ -77,8 +74,8 @@ License:
 //*********************************************************************
 -------------------------------------------------------------------------------
 Files:
-base/sigslot.cc
-base/sigslot.h
+rtc_base/sigslot.cc
+rtc_base/sigslot.h
 
 License:
 // sigslot.h: Signal/Slot classes
@@ -298,7 +295,6 @@ License:
 -------------------------------------------------------------------------------
 Files:
 common_audio/fft4g.c
-modules/audio_processing/aec/aec_rdft.c
 
 License:
 /*
@@ -309,154 +305,215 @@ License:
  * commercial use) and without fee. Please refer to this package when you modify
  * this code.
  */
--------------------------------------------------------------------------------
-Files:
-system_wrappers/source/condition_variable_event_win.cc
 
-Source:
-http://www1.cse.wustl.edu/~schmidt/ACE-copying.html
+```
 
-License:
-Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), DAnCE(TM),
-and CoSMIC(TM)
+# abseil-cpp
+```
 
-ACE(TM), TAO(TM), CIAO(TM), DAnCE&gt;(TM), and CoSMIC(TM) (henceforth referred to
-as &quot;DOC software&quot;) are copyrighted by Douglas C. Schmidt and his research
-group at Washington University, University of California, Irvine, and
-Vanderbilt University, Copyright (c) 1993-2009, all rights reserved. Since DOC
-software is open-source, freely available software, you are free to use,
-modify, copy, and distribute--perpetually and irrevocably--the DOC software
-source code and object code produced from the source, as well as copy and
-distribute modified versions of this software. You must, however, include this
-copyright statement along with any code built using DOC software that you
-release. No copyright statement needs to be provided if you just ship binary
-executables of your software products.
-You can use DOC software in commercial and/or binary software releases and are
-under no obligation to redistribute any of your source code that is built
-using DOC software. Note, however, that you may not misappropriate the DOC
-software code, such as copyrighting it yourself or claiming authorship of the
-DOC software code, in a way that will prevent DOC software from being
-distributed freely using an open-source development model. You needn't inform
-anyone that you're using DOC software in your software, though we encourage
-you to let us know so we can promote your project in the DOC software success
-stories.
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
 
-The ACE, TAO, CIAO, DAnCE, and CoSMIC web sites are maintained by the DOC
-Group at the Institute for Software Integrated Systems (ISIS) and the Center
-for Distributed Object Computing of Washington University, St. Louis for the
-development of open-source software as part of the open-source software
-community. Submissions are provided by the submitter ``as is'' with no
-warranties whatsoever, including any warranty of merchantability,
-noninfringement of third party intellectual property, or fitness for any
-particular purpose. In no event shall the submitter be liable for any direct,
-indirect, special, exemplary, punitive, or consequential damages, including
-without limitation, lost profits, even if advised of the possibility of such
-damages. Likewise, DOC software is provided as is with no warranties of any
-kind, including the warranties of design, merchantability, and fitness for a
-particular purpose, noninfringement, or arising from a course of dealing,
-usage or trade practice. Washington University, UC Irvine, Vanderbilt
-University, their employees, and students shall have no liability with respect
-to the infringement of copyrights, trade secrets or any patents by DOC
-software or any part thereof. Moreover, in no event will Washington
-University, UC Irvine, or Vanderbilt University, their employees, or students
-be liable for any lost revenue or profits or other special, indirect and
-consequential damages.
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-DOC software is provided with no support and without any obligation on the
-part of Washington University, UC Irvine, Vanderbilt University, their
-employees, or students to assist in its use, correction, modification, or
-enhancement. A number of companies around the world provide commercial support
-for DOC software, however. DOC software is Y2K-compliant, as long as the
-underlying OS platform is Y2K-compliant. Likewise, DOC software is compliant
-with the new US daylight savings rule passed by Congress as &quot;The Energy Policy
-Act of 2005,&quot; which established new daylight savings times (DST) rules for the
-United States that expand DST as of March 2007. Since DOC software obtains
-time/date and calendaring information from operating systems users will not be
-affected by the new DST rules as long as they upgrade their operating systems
-accordingly.
+   1. Definitions.
 
-The names ACE(TM), TAO(TM), CIAO(TM), DAnCE(TM), CoSMIC(TM), Washington
-University, UC Irvine, and Vanderbilt University, may not be used to endorse
-or promote products or services derived from this source without express
-written permission from Washington University, UC Irvine, or Vanderbilt
-University. This license grants no permission to call products or services
-derived from this source ACE(TM), TAO(TM), CIAO(TM), DAnCE(TM), or CoSMIC(TM),
-nor does it grant permission for the name Washington University, UC Irvine, or
-Vanderbilt University to appear in their names.
--------------------------------------------------------------------------------
-Files:
-system_wrappers/source/set_thread_name_win.h
+      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
 
-Source:
-http://msdn.microsoft.com/en-us/cc300389.aspx#P
+      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
 
-License:
-This license governs use of code marked as “sample” or “example” available on
-this web site without a license agreement, as provided under the section above
-titled “NOTICE SPECIFIC TO SOFTWARE AVAILABLE ON THIS WEB SITE.” If you use
-such code (the “software”), you accept this license. If you do not accept the
-license, do not use the software.
+      &quot;Legal Entity&quot; shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      &quot;control&quot; means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
 
-1. Definitions
+      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
 
-The terms “reproduce,” “reproduction,” “derivative works,” and “distribution”
-have the same meaning here as under U.S. copyright law.
+      &quot;Source&quot; form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
 
-A “contribution” is the original software, or any additions or changes to the
-software.
+      &quot;Object&quot; form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
 
-A “contributor” is any person that distributes its contribution under this
-license.
+      &quot;Work&quot; shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
 
-“Licensed patents” are a contributor’s patent claims that read directly on its
-contribution.
+      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
 
-2. Grant of Rights
+      &quot;Contribution&quot; shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;
 
-(A) Copyright Grant - Subject to the terms of this license, including the
-license conditions and limitations in section 3, each contributor grants you a
-non-exclusive, worldwide, royalty-free copyright license to reproduce its
-contribution, prepare derivative works of its contribution, and distribute its
-contribution or any derivative works that you create.
+      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
 
-(B) Patent Grant - Subject to the terms of this license, including the license
-conditions and limitations in section 3, each contributor grants you a
-non-exclusive, worldwide, royalty-free license under its licensed patents to
-make, have made, use, sell, offer for sale, import, and/or otherwise dispose
-of its contribution in the software or derivative works of the contribution in
-the software.
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
 
-3. Conditions and Limitations
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
 
-(A) No Trademark License- This license does not grant you rights to use any
-contributors’ name, logo, or trademarks.
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
 
-(B) If you bring a patent claim against any contributor over patents that you
-claim are infringed by the software, your patent license from such contributor
-to the software ends automatically.
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
 
-(C) If you distribute any portion of the software, you must retain all
-copyright, patent, trademark, and attribution notices that are present in the
-software.
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
 
-(D) If you distribute any portion of the software in source code form, you may
-do so only under this license by including a complete copy of this license
-with your distribution. If you distribute any portion of the software in
-compiled or object code form, you may only do so under a license that complies
-with this license.
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
 
-(E) The software is licensed “as-is.” You bear the risk of using it. The
-contributors give no express warranties, guarantees or conditions. You may
-have additional consumer rights under your local laws which this license
-cannot change. To the extent permitted under your local laws, the contributors
-exclude the implied warranties of merchantability, fitness for a particular
-purpose and non-infringement.
+      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
 
-(F) Platform Limitation - The licenses granted in sections 2(A) and 2(B)
-extend only to the software or derivative works that you create that run on a
-Microsoft Windows operating system product.
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
 
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
 
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same &quot;printed page&quot; as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   
+   
 ```
 
 # boringssl
