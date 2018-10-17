@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "BSD"
   s.author       = "Google Inc."
   s.source       = { :git => "https://github.com/wenxin3262/WebRTC-iOS.git", :tag => s.version }
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   s.vendored_frameworks = "WebRTC.framework"
 end
