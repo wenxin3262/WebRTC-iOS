@@ -6,9 +6,12 @@ Install with CocoaPods
 
 `pod 'WebRTC', :git => 'https://github.com/wenxin3262/WebRTC-iOS.git'`
 
-version is `{branch}.{patch}.{commitNumber}`
+Compatible with iOS 11.0 and up, arm64, x64 platforms.
 
-for example `60.11.18252` is compiled from release branch 60 with patch number 11, commit number is 18252.
+New branches page:
+https://chromiumdash.appspot.com/branches
 
-Built directly from https://chromium.googlesource.com/external/webrtc/, version number matches with commit number on master branch.
+Built directly from https://chromium.googlesource.com/external/webrtc/, version number matches with stable release.
+
+Build will be available in a few days when new a version of Chrome has been released to public.
 
