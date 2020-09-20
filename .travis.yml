@@ -1,6 +1,6 @@
 language: swift
-osx_image: xcode10.1
+osx_image: xcode12
 xcode_project: ./WebRTCDemo/WebRTCDemo.xcodeproj
 xcode_scheme: WebRTCDemo
-xcode_sdk: iphonesimulator10.1
+xcode_sdk: iphonesimulator14.0
 podfile: ./WebRTCDemo/Podfile
